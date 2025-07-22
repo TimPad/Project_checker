@@ -90,7 +90,7 @@ def get_analysis_from_deepseek(project_text: str):
 
     try:
         response = client.chat.completions.create(
-            model="deepseek-ai/DeepSeek-R1",
+            model="deepseek-ai/DeepSeek-V3",
             messages=[{"role": "user", "content": prompt}],
             temperature=0.6,
             response_format={"type": "json_object"}
