@@ -1,0 +1,7 @@
+[theme]
+base="dark"
+primaryColor="#B22222" # Красный цвет для акцентов, как у ваших пятен
+backgroundColor="#0E1117" # Стандартный темный фон Streamlit
+secondaryBackgroundColor="#262730" # Фон для сайдбара и других элементов
+textColor="#FAFAFA" # Белый текст
+font="sans serif"
