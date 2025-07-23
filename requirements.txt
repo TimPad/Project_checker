@@ -3,3 +3,6 @@ openai>=1.0.0
 python-pptx
 pandas
 PyMuPDF
+python-docx
+pillow
+numpy
