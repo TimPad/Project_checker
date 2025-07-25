@@ -198,8 +198,8 @@ def get_analysis_from_deepseek(project_text: str, tone: str):
         return None
 
     # Ограничиваем длину текста для ускорения обработки
-    if len(project_text) > 10000:
-        project_text = project_text[:10000] + "\n... (текст усечен для ускорения обработки)"
+    if len(project_text) > 20000:
+        project_text = project_text[:20000] + "\n... (текст усечен для ускорения обработки)"
 
     storytelling_instruction = f"""
 Создайте захватывающий сценарий выступления в стиле {tone.lower()} TED с чётким разделением на три части:
@@ -208,6 +208,7 @@ def get_analysis_from_deepseek(project_text: str, tone: str):
 3. "conclusion": убедительное заключение — подведите итоги и подчеркните значимость результатов
 
 (Стиль: живой, конкретный, без абстракций)
+Пример хорошего сторитейлинга {EXAMPLE_STORYTELLING_TEXT}
 """
 
     prompt = f"""
