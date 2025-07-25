@@ -224,7 +224,7 @@ def get_analysis_from_deepseek(project_text: str, tone: str):
 
     try:
         response = client.chat.completions.create(
-            model="deepseek-ai/DeepSeek-R1-0528",  # Используем указанную модель
+            model="deepseek-ai/DeepSeek-R1",  # Используем указанную модель
             messages=[{"role": "user", "content": prompt}],
             temperature=0.5,
             top_p=0.8,
