@@ -260,7 +260,7 @@ with col2:
         key="report_text_input"
     )
 
-    st.button("✍️ Пример текста", on_click=load_example_text, use_container_width=True)
+    #st.button("✍️ Пример текста", on_click=load_example_text, use_container_width=True)
 
 tone = st.selectbox("🎭 Стиль выступления", ["Вдохновляющий", "Формальный", "Научно-популярный"], index=0)
 
